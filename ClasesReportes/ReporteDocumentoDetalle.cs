@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClasesReportes
+{
+    public class ReporteDocumentoDetalle
+    {
+        private int cantidad;
+        private string descripcion;
+        private decimal precio;
+        private decimal exentas;
+        private decimal afectas;
+
+        public ReporteDocumentoDetalle()
+        {
+
+        }
+
+        public ReporteDocumentoDetalle(int cantidad, string descripcion, decimal precio, decimal exentas, decimal afectas)
+        {
+            this.cantidad = cantidad;
+            this.descripcion = descripcion;
+            this.precio = precio;
+            this.exentas = exentas;
+            this.afectas = afectas;
+        }
+
+        public int Cantidad { get => cantidad; set => cantidad = value; }
+        public string Descripcion { get => descripcion; set => descripcion = value; }
+        public decimal Precio { get => precio; set => precio = value; }
+        public decimal Exentas { get => exentas; set => exentas = value; }
+        public decimal Afectas { get => afectas; set => afectas = value; }
+    }
+}
